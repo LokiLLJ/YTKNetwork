@@ -26,6 +26,4 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = "2.0"
   s.tvos.deployment_target = "9.0"
   s.framework = "CFNetwork"
-
-  s.dependency "AFNetworking", :git => 'https://github.com/gzx543097079/AppStorePrivacyInfo.git', :tag => 'AFNetworking-4.0.1.1'
 end
