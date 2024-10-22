@@ -24,5 +24,5 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
   s.framework = "CFNetwork"
 
-  s.dependency "AFNetworking/NSURLSession", "~> 4.0"
+  s.dependency "AFNetworking/NSURLSession", "https://github.com/LokiLLJ/AFNetworking.git", :tag => 'AFNetworking-4.0.1-PrivacyInfo'
 end
