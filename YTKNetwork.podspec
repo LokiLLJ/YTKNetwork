@@ -17,6 +17,9 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
 
   s.private_header_files = "YTKNetwork/YTKNetworkPrivate.h"
+  s.source_bundles = {
+    "YTKNetwork" => 'Resources/PrivacyInfo.xcprivacy'
+  }
 
   s.ios.deployment_target = "9.0"
   s.osx.deployment_target = "10.10"
@@ -24,5 +27,5 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
   s.framework = "CFNetwork"
 
-  s.dependency "AFNetworking", 'https://github.com/gzx543097079/AppStorePrivacyInfo.git', :tag => 'AFNetworking-4.0.1.1'
+  s.dependency "AFNetworking/NSURLSession", '"4.0.1"
 end
