@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
 
   s.private_header_files = "YTKNetwork/YTKNetworkPrivate.h"
-  s.source_bundles = {
+  s.resource_bundles = {
     "YTKNetwork" => 'Resources/PrivacyInfo.xcprivacy'
   }
 
