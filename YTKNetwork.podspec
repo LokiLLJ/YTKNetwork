@@ -21,6 +21,15 @@ Pod::Spec.new do |s|
     "YTKNetwork" => 'Resources/PrivacyInfo.xcprivacy'
   }
 
+  search_paths = [
+    #Podfile使用指定路径链接
+    '${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking'
+    ]
+    s.pod_target_xcconfig = {
+      'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+      'FRAMEWORK_SEARCH_PATHS' => search_paths,
+    }
+
   s.ios.deployment_target = "9.0"
   s.osx.deployment_target = "10.10"
   s.watchos.deployment_target = "2.0"
